@@ -1,7 +1,6 @@
 /* eslint no-unused-expressions:0 */
 
 import { injectGlobal } from 'styled-components';
-import cover from './statics/images/cover2.jpg';
 
 injectGlobal`
   html {
