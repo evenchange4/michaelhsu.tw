@@ -10,6 +10,10 @@ script:
   - yarn run test
   - yarn run build
 
+
+after_success:
+  - ./node_modules/.bin/codecov --token=b55f4156-6bea-4f4a-a4ce-30dfff92bb8a
+
 deploy:
   provider: pages
   skip_cleanup: true

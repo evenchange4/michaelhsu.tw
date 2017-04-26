@@ -9,6 +9,7 @@
     "styled-components": "next"
   },
   "devDependencies": {
+    "codecov": "^2.1.0",
     "react-scripts": "0.9.5",
     "react-snapshot": "^1.0.4"
   },
