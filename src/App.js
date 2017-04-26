@@ -11,15 +11,14 @@ import email from './statics/images/socials/email.svg';
 
 const Header = styled.div`
   height: calc(100vh - 120px);
-  ${''/* height: 200px; */}
   background-image: url(${cover2});
-  background-color: skyblue;
+  background-color: aliceblue;
   background-size: cover;
   background-attachment: fixed;
   background-position-y: 70%;
   background-position-x: center;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1000px) {
     background-image: url(${cover});
     background-size: contain;
     background-position-y: 0;
@@ -70,9 +69,7 @@ const ButtonWrapper = styled.div`
     align-items: center;
     cursor: pointer;
     height: 40px;
-    ${''/* background-color: silver; */}
     text-decoration: underline;
-    ${''/* color: white; */}
     padding: 0 8px;
   }
 

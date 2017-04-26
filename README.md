@@ -21,9 +21,12 @@
 
 ## Technology Stacks
 
--   Create-React-App
--   React-snapshot
--   Styled-components
+-   node v7.5.0
+-   npm v4.1.2
+-   yarn v0.21.3
+-   [Create-React-App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration.
+-   [React-snapshot](https://www.npmjs.com/package/react-snapshot): A zero-configuration static pre-renderer for React apps
+-   [Styled-components](https://github.com/styled-components/styled-components): Visual primitives for the component age 💅
 -   Travis CI
 -   Netlify
 
