@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import CoverImage from './components/CoverImage';
-import Body from './components/Body';
-import Avatar from './components/Avatar';
-import Center from './components/Center';
-import A from './components/A';
-import ButtonWrapper from './components/ButtonWrapper';
-import IconWrapper from './components/IconWrapper';
-import github from './statics/images/socials/github.svg';
-import twitter from './statics/images/socials/twitter.svg';
-import blog from './statics/images/socials/blog.svg';
-import linkedin from './statics/images/socials/linkedin.svg';
-import email from './statics/images/socials/email.svg';
-import michael from './statics/images/michael.jpeg';
+import CoverImage from '../components/CoverImage';
+import Body from '../components/Body';
+import Avatar from '../components/Avatar';
+import Center from '../components/Center';
+import A from '../components/A';
+import ButtonWrapper from '../components/ButtonWrapper';
+import IconWrapper from '../components/IconWrapper';
+import github from '../statics/images/socials/github.svg';
+import twitter from '../statics/images/socials/twitter.svg';
+import blog from '../statics/images/socials/blog.svg';
+import linkedin from '../statics/images/socials/linkedin.svg';
+import email from '../statics/images/socials/email.svg';
+import michael from '../statics/images/michael.jpeg';
 
 class App extends Component {
   render() {

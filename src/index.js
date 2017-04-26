@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-snapshot';
-import App from './App';
+import App from './pages/App';
 import 'normalize.css'
 import './style.js';
 
