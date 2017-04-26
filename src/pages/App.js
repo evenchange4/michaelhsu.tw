@@ -25,15 +25,14 @@ class App extends Component {
             <h3><b>Front-End Developer</b></h3>
           </Center>
           <p>
-            Hi, I'm a programmer, a web developer and love to learn some new
-            things of Front-End environment include Javascript, React, functional
-            reactive programming. Besides, my research interests are
-            Information Retrieval, Text Mining, Machine Learning,
-            Natural Language Processing and Data Mining for BigData.
+            Hi, I am a web developer and love to learn new things about front-end
+            technology such as JS, React and functional reactive programming.
+            Besides of that, I am interested in researching information retrieval,
+            text mining, machine learning, NLP and data mining for big data.
           </p>
           <p>
-            I think the world where everyone has the power to share knowledge,
-            so I got involved in sharing something in my blog.
+            I think everyone in the world has the power to share knowledges,
+            so I enjoy sharing things on my blog.
           </p>
 
           <ButtonWrapper>
