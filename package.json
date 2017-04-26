@@ -6,11 +6,11 @@
     "normalize.css": "^6.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-snapshot": "^1.0.4",
     "styled-components": "next"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "react-snapshot": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
