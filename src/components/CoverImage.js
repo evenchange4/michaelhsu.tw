@@ -10,12 +10,12 @@ const CoverImage = styled.div`
   background-attachment: fixed;
   background-position-y: 70%;
   background-position-x: center;
+  background-repeat: no-repeat;
 
   @media (min-width: 1000px) {
     background-image: url(${cover});
-    background-size: contain;
-    background-position-y: 0;
-    background-repeat: repeat-x;
+    background-size: cover;
+    background-position-y: -160px;
   }
 `;
 
