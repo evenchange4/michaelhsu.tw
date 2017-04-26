@@ -37,7 +37,7 @@ class App extends Component {
           </p>
 
           <ButtonWrapper>
-            <A href="https://medium.com/@evenchange4/latest">Medium Blog</A>
+            <A href="https://medium.com/@evenchange4/latest">Medium Stories</A>
             <A href="https://github.com/evenchange4/michaelhsu.tw">Source Code</A>
           </ButtonWrapper>
 
