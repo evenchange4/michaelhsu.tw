@@ -12,6 +12,14 @@ script:
   # - yarn run test
   - yarn run build
 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: build
+  on:
+    branch: master
+
 cache:
   yarn: true
   directories:
