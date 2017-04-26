@@ -123,31 +123,30 @@ class App extends Component {
           </p>
 
           <ButtonWrapper>
-            <A href="/">
+            <A href="https://medium.com/@evenchange4/latest">
               Blog
             </A>
-            <A href="/">
+            <A href="http://about.michaelhsu.tw">
               About me
             </A>
           </ButtonWrapper>
 
           <IconWrapper>
-            <a href="/">
+            <a href="mailto:evenchange4@gmail.com">
               <img src={email} alt="email"/>
             </a>
-            <a href="/">
+            <a href="https://github.com/evenchange4">
               <img src={github} alt="github"/>
             </a>
-            <a href="/">
+            <a href="https://twitter.com/evenchange4">
               <img src={twitter} alt="twitter"/>
             </a>
-            <a href="/">
+            <a href="https://www.linkedin.com/in/evenchange4">
               <img src={linkedin} alt="linkedin"/>
             </a>
-            <a href="/">
+            <a href="http://old.michaelhsu.tw/">
               <img src={blog} alt="blog"/>
             </a>
-
           </IconWrapper>
         </Body>
       </div>
