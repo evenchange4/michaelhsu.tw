@@ -1,131 +1,44 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import cover from './statics/images/cover.jpg';
-import cover2 from './statics/images/cover2.jpg';
-import michael from './statics/images/michael.jpeg';
+import CoverImage from './components/CoverImage';
+import Body from './components/Body';
+import Avatar from './components/Avatar';
+import Center from './components/Center';
+import A from './components/A';
+import ButtonWrapper from './components/ButtonWrapper';
+import IconWrapper from './components/IconWrapper';
 import github from './statics/images/socials/github.svg';
 import twitter from './statics/images/socials/twitter.svg';
 import blog from './statics/images/socials/blog.svg';
 import linkedin from './statics/images/socials/linkedin.svg';
 import email from './statics/images/socials/email.svg';
-
-const Header = styled.div`
-  height: calc(100vh - 120px);
-  background-image: url(${cover2});
-  background-color: aliceblue;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: 70%;
-  background-position-x: center;
-
-  @media (min-width: 1000px) {
-    background-image: url(${cover});
-    background-size: contain;
-    background-position-y: 0;
-    background-repeat: repeat-x;
-  }
-`;
-
-const Avatar = styled.div`
-  background-image: url(${michael});
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100px;
-  width: 100px;
-  position: relative;
-  top: -50px;
-  margin-bottom: -50px;
-  border: 2px solid white;
-  border-radius: 50px;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
-`;
-
-const Center = styled.div`
-  text-align: center;
-`;
-
-const Body = styled.div`
-  padding: 0 15px;
-  margin: 0 auto;
-  background: white;
-
-  @media (min-width: 600px) {
-    width: 600px;
-  }
-`;
-
-const A = styled.a`
-  text-decoration: none;
-  color: black;
-`;
-
-const ButtonWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 24px;
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    height: 40px;
-    text-decoration: underline;
-    padding: 0 8px;
-  }
-
-  a + a {
-    margin-left: 15px;
-  }
-`;
-
-const IconWrapper = styled.div`
-  text-align: center;
-
-  a {
-    cursor: pointer;
-  }
-
-  img {
-    width: 30px;
-  }
-
-  a + a {
-    margin-left: 15px;
-  }
-`;
+import michael from './statics/images/michael.jpeg';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-
+        <CoverImage />
         <Body>
           <Avatar />
           <Center>
-            <h1>
-              <A href="/">Michael Hsu</A>
-            </h1>
-
-            <h3>
-              <b>
-                Front-End Developer
-              </b>
-            </h3>
+            <h1><A href="/">Michael Hsu</A></h1>
+            <h3><b>Front-End Developer</b></h3>
           </Center>
           <p>
-          Michael is a master student of BAEIR Lab at National Taiwan University. His research interests include Information Retrieval, Data / Text / Web Mining, Machine Learning, Natural Language Processing and Data Mining for BigData. He is also a programmer, a web developer.
-
-          He loves to take participate in technology conference occasionally to keep learning new things. Michael thinks the world where everyone has the power to share knowledge, so he got involved with trying to keep everything in his blog.
+            Hi, I'm a programmer, a web developer and love to learn some new
+            things of Front-End environment include Javascript, React, functional
+            reactive programming. Besides, my research interests are
+            Information Retrieval, Text Mining, Machine Learning,
+            Natural Language Processing and Data Mining for BigData.
+          </p>
+          <p>
+            I think the world where everyone has the power to share knowledge,
+            so I got involved in sharing something in my blog.
           </p>
 
           <ButtonWrapper>
-            <A href="https://medium.com/@evenchange4/latest">
-              Blog
-            </A>
-            <A href="http://about.michaelhsu.tw">
-              About me
-            </A>
+            <A href="https://medium.com/@evenchange4/latest">Medium Blog</A>
+            <A href="https://github.com/evenchange4/michaelhsu.tw">Source Code</A>
           </ButtonWrapper>
 
           <IconWrapper>
@@ -143,6 +56,9 @@ class App extends Component {
             </a>
             <a href="http://old.michaelhsu.tw/">
               <img src={blog} alt="blog"/>
+            </a>
+            <a href="http://about.michaelhsu.tw/">
+              <img src={michael} alt="About me"/>
             </a>
           </IconWrapper>
         </Body>

@@ -43,6 +43,10 @@ Any commit on `master` branch.
 
 ---
 
+## Inspiration
+
+- https://github.com/staltz/staltz.com
+
 ## CONTRIBUTING
 
 *   ⇄ Pull requests and ★ Stars are always welcome.

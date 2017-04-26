@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
-    "test": "react-scripts test --env=jsdom",
+    "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
+    "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }

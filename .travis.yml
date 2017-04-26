@@ -7,7 +7,7 @@ notifications:
   email: evenchange4@gmail.com
 
 script:
-  # - yarn run test
+  - yarn run test
   - yarn run build
 
 deploy:
