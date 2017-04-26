@@ -14,6 +14,6 @@
 $ yarn install
 ```
 
-## deploy
+## Deploy to GitHub pages
 
-Merge commit to master branch.
+Any commit on `master` branch.
