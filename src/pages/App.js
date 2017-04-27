@@ -40,22 +40,22 @@ const App = () => (
 
       <IconWrapper>
         <a href="mailto:evenchange4@gmail.com">
-          <img src={email} alt="email"/>
+          <img src={email} alt="email" />
         </a>
         <a href="https://github.com/evenchange4">
-          <img src={github} alt="github"/>
+          <img src={github} alt="github" />
         </a>
         <a href="https://twitter.com/evenchange4">
-          <img src={twitter} alt="twitter"/>
+          <img src={twitter} alt="twitter" />
         </a>
         <a href="https://www.linkedin.com/in/evenchange4">
-          <img src={linkedin} alt="linkedin"/>
+          <img src={linkedin} alt="linkedin" />
         </a>
         <a href="http://old.michaelhsu.tw/">
-          <img src={blog} alt="blog"/>
+          <img src={blog} alt="blog" />
         </a>
         <a href="http://about.michaelhsu.tw/">
-          <img src={michael} alt="About me"/>
+          <img src={michael} alt="About me" />
         </a>
       </IconWrapper>
     </Body>

@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "codecov": "^2.1.0",
+    "prettier": "^1.2.2",
     "react-scripts": "0.9.5",
     "react-snapshot": "^1.0.4"
   },
@@ -18,6 +19,6 @@
     "build": "react-scripts build && react-snapshot",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "format": "prettier --trailing-comma all --single-quote --write 'src/**/*.js'"
   }
 }
