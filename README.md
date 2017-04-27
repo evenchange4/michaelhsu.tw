@@ -29,17 +29,27 @@
 -   [Styled-components](https://github.com/styled-components/styled-components): Visual primitives for the component age 💅
 -   Travis CI
 -   Netlify
+-   GA
 
 ## Development
 
 ```console
 $ yarn install
 $ yarn run start
+$ yarn run test:watch
+$ yarn run build
 ```
 
 ## Deploy to GitHub pages
 
-Any commit on `master` branch.
+> Any git tags.
+
+1.  Update `CHANGELOG.md`
+2.  Create a new git tag
+
+```console
+$ npm version patch
+```
 
 ---
 
@@ -51,7 +61,7 @@ Any commit on `master` branch.
 
 *   ⇄ Pull requests and ★ Stars are always welcome.
 *   For bugs and feature requests, please create an issue.
-*   Pull requests must be accompanied by passing automated tests (`$ npm test`).
+*   Pull requests must be accompanied by passing automated tests (`$ yarn run test`).
 
 ## [CHANGELOG](CHANGELOG.md)
 
