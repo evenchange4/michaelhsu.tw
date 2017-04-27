@@ -17,29 +17,39 @@
     <!-- https://megatags.co/#generate-tags -->
 
     <!-- COMMON TAGS -->
-    <title>Michael Hsu - Front-End Developer</title>
+    <title>%REACT_APP_NAME% - %REACT_APP_TITLE%</title>
     <!-- Search Engine -->
-    <meta name="description" content="I am a web developer and love to learn new things about front-end technology such as JS, React and functional reactive programming. Besides of that, I am interested in researching information retrieval, text mining, machine learning, NLP and data mining for big data.">
+    <meta name="description" content="%REACT_APP_DESC1%">
     <meta name="image" content="%PUBLIC_URL%/michael.jpeg">
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Michael Hsu - Front-End Developer">
-    <meta itemprop="description" content="I am a web developer and love to learn new things about front-end technology such as JS, React and functional reactive programming. Besides of that, I am interested in researching information retrieval, text mining, machine learning, NLP and data mining for big data.">
+    <meta itemprop="name" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
+    <meta itemprop="description" content="%REACT_APP_DESC1%">
     <meta itemprop="image" content="%PUBLIC_URL%/michael.jpeg">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Michael Hsu - Front-End Developer">
-    <meta name="twitter:description" content="I am a web developer and love to learn new things about front-end technology such as JS, React and functional reactive programming. Besides of that, I am interested in researching information retrieval, text mining, machine learning, NLP and data mining for big data.">
-    <meta name="twitter:site" content="@evenchange4">
-    <meta name="twitter:creator" content="@evenchange4">
+    <meta name="twitter:title" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
+    <meta name="twitter:description" content="%REACT_APP_DESC1%">
+    <meta name="twitter:site" content="@%REACT_APP_USER_ID%">
+    <meta name="twitter:creator" content="@%REACT_APP_USER_ID%">
     <meta name="twitter:image" content="%PUBLIC_URL%/michael.jpeg">
     <meta name="twitter:image:src" content="%PUBLIC_URL%/michael.jpeg">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Michael Hsu - Front-End Developer">
-    <meta name="og:description" content="I am a web developer and love to learn new things about front-end technology such as JS, React and functional reactive programming. Besides of that, I am interested in researching information retrieval, text mining, machine learning, NLP and data mining for big data.">
+    <meta name="og:title" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
+    <meta name="og:description" content="%REACT_APP_DESC1%">
     <meta name="og:image" content="%PUBLIC_URL%/michael.jpeg">
-    <meta name="og:url" content="http://michaelhsu.tw">
-    <meta name="og:site_name" content="Michael Hsu - Front-End Developer">
+    <meta name="og:url" content="%REACT_APP_URL%">
+    <meta name="og:site_name" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
     <meta name="og:type" content="website">
+
+    <!-- GA -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '%REACT_APP_GA_ID%', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
     <div id="root"></div>
