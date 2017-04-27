@@ -17,13 +17,16 @@
 [peerDependency-badge]: https://david-dm.org/evenchange4/michaelhsu.tw/peer-status.svg?style=flat-square
 [peerDependency]: https://david-dm.org/evenchange4/michaelhsu.tw#info=peerDependencies
 [![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/michaelhsu.tw.svg)](https://greenkeeper.io/)
+[![prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-
-## Technology Stacks
+## Requirements
 
 -   node v7.5.0
 -   npm v4.1.2
 -   yarn v0.21.3
+
+## Technology Stacks
+
 -   [Create-React-App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration.
 -   [React-snapshot](https://www.npmjs.com/package/react-snapshot): A zero-configuration static pre-renderer for React apps
 -   [Styled-components](https://github.com/styled-components/styled-components): Visual primitives for the component age 💅
@@ -38,6 +41,7 @@ $ yarn install
 $ yarn run start
 $ yarn run test:watch
 $ yarn run build
+$ yarn run foramt
 ```
 
 ## Deploy to GitHub pages
