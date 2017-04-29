@@ -1,23 +1,16 @@
+import React from 'react';
 import styled from 'styled-components';
+import ProgressiveImage from './ProgressiveImage';
 import cover from '../statics/images/cover.jpg';
+import cover_60 from '../statics/images/cover-60.jpg';
 import cover2 from '../statics/images/cover2.jpg';
+import cover2_60 from '../statics/images/cover2-60.jpg';
 
-const CoverImage = styled.div`
-  height: calc(100vh - 120px);
-  background-image: url(${cover2});
-  background-color: aliceblue;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: 70%;
-  background-position-x: center;
-  background-repeat: no-repeat;
-
-  @media (min-width: 1000px) {
-    background-image: url(${cover});
-    background-size: cover;
-    background-position-y: -160px;
-  }
-`;
+const CoverImage = () =>
+  <ProgressiveImage
+    src={cover}
+    placeholder={cover_60}
+  />
 
 CoverImage.displayName = 'CoverImage';
 
