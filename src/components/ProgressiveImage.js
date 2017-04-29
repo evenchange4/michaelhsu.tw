@@ -18,12 +18,12 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/observable/of';
 
 function loadImage(src) {
-	return new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const image = new Image();
     image.src = src;
-		image.onload = () => resolve(src);
+    image.onload = () => resolve(src);
     image.onerror = err => reject(err);
-	});
+  });
 }
 
 const Img = styled.div`
@@ -35,12 +35,12 @@ const Img = styled.div`
   background-position-y: 70%;
   background-position-x: center;
   background-repeat: no-repeat;
-  opacity: ${props => props.isLoaded ? 1 : 0.5};
+  opacity: ${props => (props.isLoaded ? 1 : 0.5)};
   transition: opacity 0.5s linear;
 
-  filter: ${props => props.isLoaded ? 'none' : 'blur(50px)'};
+  filter: ${props => (props.isLoaded ? 'none' : 'blur(50px)')};
   /* this is needed so Safari keeps sharp edges */
-  transform: ${props => props.isLoaded ? 'none' : 'scale(1)'};
+  transform: ${props => (props.isLoaded ? 'none' : 'scale(1)')};
   overflow: hidden;
 `;
 
@@ -49,21 +49,18 @@ const DELAY = 200;
 const ProgressiveImage = componentFromStream(propStream => {
   const props$ = Observable.from(propStream);
   const placeholder$ = props$.pluck('placeholder');
-  const src$ = props$
-    .pluck('src')
-    .switchMap(loadImage)
-    .startWith('');
+  const src$ = props$.pluck('src').switchMap(loadImage).startWith('');
 
   const isLoaded$ = src$
     .filter(src => !!src)
     .switchMapTo(Observable.of(true).delay(DELAY))
     .startWith(false);
 
-  const image$ = placeholder$
-    .merge(src$);
+  const image$ = placeholder$.merge(src$);
 
   return props$.combineLatest(
-    image$, isLoaded$,
+    image$,
+    isLoaded$,
     ({ placeholder, ...otherProps }, src, isLoaded) => (
       <Img src={src} isLoaded={isLoaded} />
     ),
