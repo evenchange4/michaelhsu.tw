@@ -4,6 +4,7 @@
 > Unreleased
 
 * Introduce prettier. You can use `$ npm run format` to auto formatting.
+* Introduce [react-progressive-bg-image](https://github.com/evenchange4/react-progressive-bg-image).
 
 ## [v0.1.1]
 > Apr 27, 2017
