@@ -4,6 +4,7 @@
 > Unreleased
 
 * feat(eslint): setup
+* fix(image): landscape => portrait
 
 ## [v0.1.3]
 
