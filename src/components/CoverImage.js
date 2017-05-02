@@ -13,13 +13,15 @@ import portrait from '../statics/images/portrait.jpg';
  * ref: https://github.com/WickyNilliams/enquire.js/issues/82#issuecomment-26990494
  * @author Michael Hsu
  */
-window.matchMedia = window.matchMedia || function() {
-  return {
-    matches : true,
-    addListener : function() {},
-    removeListener: function() {}
+window.matchMedia =
+  window.matchMedia ||
+  function() {
+    return {
+      matches: true,
+      addListener: function() {},
+      removeListener: function() {},
+    };
   };
-};
 
 const StyledProgressiveImage = styled(ProgressiveImage)`
   height: calc(100vh - 120px);
