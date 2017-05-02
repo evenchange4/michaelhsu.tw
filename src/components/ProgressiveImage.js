@@ -27,21 +27,14 @@ function loadImage(src) {
 }
 
 const Img = styled.div`
-  height: calc(100vh - 120px);
   background-image: url(${props => props.src});
-  background-color: aliceblue;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: 70%;
-  background-position-x: center;
   background-repeat: no-repeat;
   opacity: ${props => (props.isLoaded ? 1 : 0.5)};
-  transition: opacity 0.5s linear;
+  transition: opacity 0.3s linear;
 
   filter: ${props => (props.isLoaded ? 'none' : 'blur(50px)')};
   /* this is needed so Safari keeps sharp edges */
   transform: ${props => (props.isLoaded ? 'none' : 'scale(1)')};
-  overflow: hidden;
 `;
 
 const DELAY = 200;
@@ -62,7 +55,7 @@ const ProgressiveImage = componentFromStream(propStream => {
     image$,
     isLoaded$,
     ({ placeholder, ...otherProps }, src, isLoaded) => (
-      <Img src={src} isLoaded={isLoaded} />
+      <Img src={src} isLoaded={isLoaded} {...otherProps} />
     ),
   );
 });
