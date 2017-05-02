@@ -40,9 +40,7 @@
 ```console
 $ yarn install
 $ yarn run start
-$ yarn run test:watch
 $ yarn run build
-$ yarn run foramt
 ```
 
 ## Deploy to GitHub pages
@@ -54,6 +52,14 @@ $ yarn run foramt
 
 ```console
 $ npm version patch
+```
+
+## Test
+
+```
+$ yarn run format
+$ yarn run eslint
+$ yarn run test:watch
 ```
 
 ---

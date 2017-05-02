@@ -7,11 +7,18 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-media": "^1.5.1",
-    "react-progressive-bg-image": "^1.0.0",
+    "react-progressive-bg-image": "^1.0.3",
     "styled-components": "next"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "codecov": "^2.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-react-app": "^0.6.2",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
     "prettier": "^1.2.2",
     "react-scripts": "0.9.5",
     "react-snapshot": "^1.0.4"
@@ -21,6 +28,7 @@
     "build": "react-scripts build && react-snapshot",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
+    "eslint": "eslint ./",
     "format": "prettier --trailing-comma all --single-quote --write 'src/**/*.js'"
   }
 }

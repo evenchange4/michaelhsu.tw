@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* feat(eslint): setup
+
 ## [v0.1.3]
 
 * fix: update `react-progressive-bg-image` to v1.0.2.
