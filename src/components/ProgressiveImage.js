@@ -6,16 +6,16 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/combineLatest';
 import 'rxjs/add/operator/pluck';
 import 'rxjs/add/operator/startWith';
-
 import 'rxjs/add/operator/switchMapTo';
 import 'rxjs/add/operator/delay';
-
 import 'rxjs/add/operator/merge';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/mapTo';
 import 'rxjs/add/observable/from';
 import 'rxjs/add/observable/of';
+import 'rxjs/add/observable/merge';
 
 function loadImage(src) {
   return new Promise((resolve, reject) => {
@@ -51,10 +51,10 @@ const ProgressiveImage = componentFromStream(propStream => {
   const placeholder$ = props$.pluck('placeholder');
   const src$ = props$.pluck('src').switchMap(loadImage).startWith('');
 
-  const isLoaded$ = src$
-    .filter(src => !!src)
-    .switchMapTo(Observable.of(true).delay(DELAY))
-    .startWith(false);
+  const isLoaded$ = Observable.merge(
+    placeholder$.mapTo(false),
+    src$.filter(src => !!src).switchMapTo(Observable.of(true).delay(DELAY)),
+  ).startWith(false);
 
   const image$ = placeholder$.merge(src$);
 
