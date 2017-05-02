@@ -7,8 +7,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-media": "^1.5.1",
-    "recompose": "^0.23.1",
-    "rxjs": "^5.3.0",
+    "react-progressive-bg-image": "^1.0.0",
     "styled-components": "next"
   },
   "devDependencies": {
