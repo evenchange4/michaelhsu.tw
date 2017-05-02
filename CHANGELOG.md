@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+* feat(eslint): setup
+* fix(image): landscape => portrait
+
 ## [v0.1.3]
 
 * fix: update `react-progressive-bg-image` to v1.0.2.

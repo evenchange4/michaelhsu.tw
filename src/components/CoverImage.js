@@ -17,7 +17,7 @@ window.matchMedia =
   window.matchMedia ||
   function() {
     return {
-      matches: false,
+      matches: true,
       addListener: function() {},
       removeListener: function() {},
     };
@@ -37,8 +37,8 @@ const CoverImage = () => (
   <Media query={{ minWidth: 1000 }}>
     {matches => (
       <StyledProgressiveImage
-        src={matches ? portrait : landscape}
-        placeholder={matches ? portraitX60 : landscapeX60}
+        src={matches ? landscape : portrait}
+        placeholder={matches ? landscapeX60 : portraitX60}
       />
     )}
   </Media>
