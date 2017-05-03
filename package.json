@@ -1,6 +1,6 @@
 {
   "name": "michaelhsu.tw",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "normalize.css": "^7.0.0",
