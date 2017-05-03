@@ -23,7 +23,7 @@
 
 -   node v7.5.0
 -   npm v4.1.2
--   yarn v0.21.3
+-   yarn v0.23.4
 
 ## Technology Stacks
 
