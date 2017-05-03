@@ -7,8 +7,4 @@ injectGlobal`
     font-size: 15px;
     line-height: 1.5;
   }
-
-  body {
-    margin: 0;
-  }
 `;

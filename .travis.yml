@@ -12,7 +12,7 @@ script:
   - yarn run build
 
 after_success:
-  - ./node_modules/.bin/codecov --token=b55f4156-6bea-4f4a-a4ce-30dfff92bb8a
+  - ./node_modules/.bin/codecov
 
 deploy:
   provider: pages
