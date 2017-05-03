@@ -1,23 +1,23 @@
 # michaelhsu.tw
 
-[![Travis][build-badge]][build] [![Codecov Status][codecov-badge]][codecov]
+[![Travis][build-badge]][build] [![Codecov Status][codecov-badge]][codecov] [![Github Tag][githubTag-badge]][githubTag]
 
 [![Dependency Status][dependency-badge]][dependency] [![devDependency Status][devDependency-badge]][devDependency] [![peerDependency Status][peerDependency-badge]][peerDependency]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/michaelhsu.tw.svg)](https://greenkeeper.io/) [![prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 [build-badge]: https://img.shields.io/travis/evenchange4/michaelhsu.tw/master.svg?style=flat-square
 [build]: https://travis-ci.org/evenchange4/michaelhsu.tw
-
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/michaelhsu.tw.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/michaelhsu.tw?branch=master
-
 [dependency-badge]: https://david-dm.org/evenchange4/michaelhsu.tw.svg?style=flat-square
 [dependency]: https://david-dm.org/evenchange4/michaelhsu.tw
 [devDependency-badge]: https://david-dm.org/evenchange4/michaelhsu.tw/dev-status.svg?style=flat-square
 [devDependency]: https://david-dm.org/evenchange4/michaelhsu.tw#info=devDependencies
 [peerDependency-badge]: https://david-dm.org/evenchange4/michaelhsu.tw/peer-status.svg?style=flat-square
 [peerDependency]: https://david-dm.org/evenchange4/michaelhsu.tw#info=peerDependencies
-[![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/michaelhsu.tw.svg)](https://greenkeeper.io/)
-[![prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[githubTag-badge]: https://img.shields.io/github/tag/evenchange4/michaelhsu.tw.svg?style=flat-square
+[githubTag]: ./CHANGELOG.md
 
 ## Requirements
 
