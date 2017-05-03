@@ -2,17 +2,9 @@ sudo: false
 language: node_js
 node_js:
   - "7.5.0"
-env:
-  - YARN_VERSION="0.23.4"
 
 notifications:
   email: evenchange4@gmail.com
-
-before_install:
-  - |
-    if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
-      curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
-    fi
 
 script:
   - yarn run eslint
@@ -33,5 +25,4 @@ deploy:
 cache:
   yarn: true
   directories:
-    - ~/.yarn
     - node_modules
