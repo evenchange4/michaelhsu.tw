@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* fix(progressive-image): update react-progressive-bg-image to 1.0.6
+
 ## [v1.0.0] 🚀
 > May 03, 2017
 
