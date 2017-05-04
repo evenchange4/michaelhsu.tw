@@ -1,8 +1,7 @@
 {
   "private": true,
   "name": "michaelhsu.tw",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
   "dependencies": {
     "normalize.css": "^7.0.0",
     "react": "^15.5.4",
