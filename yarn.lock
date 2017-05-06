@@ -2588,7 +2588,7 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
-hoist-non-react-statics@^1.0.0:
+hoist-non-react-statics@^1.0.0, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
@@ -4531,9 +4531,9 @@ react-media@^1.5.1:
   dependencies:
     json2mq "^0.2.0"
 
-react-progressive-bg-image@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-1.0.6.tgz#790eb605fc2089e077279857e91c5abae31a2384"
+react-progressive-bg-image@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-1.0.7.tgz#7f2f955d476afecf7eeaf0b2f24693defbd794f4"
   dependencies:
     prop-types "^15.5.8"
     recompose "^0.23.1"
@@ -5235,13 +5235,14 @@ style-loader@0.13.1:
   dependencies:
     loader-utils "^0.2.7"
 
-styled-components@next:
-  version "2.0.0-15"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.0.0-15.tgz#77843c9f5267c60a97e28c97719d1ee89ea28be1"
+styled-components@rc:
+  version "2.0.0-17"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.0.0-17.tgz#9d49e5b351f2c3e13698ee00d189a3c951735088"
   dependencies:
     buffer "^5.0.3"
     css-to-react-native "^2.0.3"
     fbjs "^0.8.9"
+    hoist-non-react-statics "^1.2.0"
     inline-style-prefixer "^2.0.5"
     is-function "^1.0.1"
     is-plain-object "^2.0.1"

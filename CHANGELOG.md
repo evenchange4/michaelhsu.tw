@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* chore(packages): update styled-components to rc.
+
 ## [v1.0.1]
 > May 04, 2017
 
