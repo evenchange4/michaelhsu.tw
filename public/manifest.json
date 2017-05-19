@@ -1,0 +1,15 @@
+{
+  "short_name": "michaelhsu.tw",
+  "name": "michaelhsu.tw",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#00A1DE",
+  "background_color": "#FAFAFA"
+}

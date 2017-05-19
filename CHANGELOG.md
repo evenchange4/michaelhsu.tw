@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* feat(CRA): upgrade to 1.0 & use PWA feature.
+
 ## [v1.0.2]
 > May 06, 2017
 
