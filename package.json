@@ -14,7 +14,7 @@
     "babel-eslint": "^7.2.3",
     "codecov": "^2.1.0",
     "eslint": "^3.19.0",
-    "eslint-config-react-app": "^0.6.2",
+    "eslint-config-react-app": "^1.0.0",
     "eslint-plugin-flowtype": "^2.32.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
