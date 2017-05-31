@@ -8,9 +8,9 @@
 
 ## Requirements
 
--   node v7.5.0
--   npm v4.1.2
--   yarn v0.23.4
+-   node >= 8.0.0
+-   npm >= 5.0.0
+-   yarn >= 0.24.6
 
 ## Technology Stacks
 
