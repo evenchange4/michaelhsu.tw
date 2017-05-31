@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.1]
+> May 31, 2017
+
 * chore(packages): ncu
 * chore(env): use node 8 / npm 5 / styled-components 2
 
