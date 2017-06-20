@@ -19,8 +19,8 @@
 -   [Styled-components](https://github.com/styled-components/styled-components): Visual primitives for the component age 💅
 -   [React-progressive-bg-image](https://github.com/evenchange4/react-progressive-bg-image): Medium style progressive background image for React.
 -   Travis CI
--   Netlify
--   GA
+-   Netlify - CD
+-   GA - [autotrack](https://github.com/googleanalytics/autotrack)
 
 ## Development
 

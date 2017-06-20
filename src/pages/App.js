@@ -13,7 +13,7 @@ import linkedin from '../statics/images/socials/linkedin.svg';
 import email from '../statics/images/socials/email.svg';
 import michael from '../statics/images/michael.jpeg';
 
-const App = () => (
+const App = () =>
   <div>
     <CoverImage />
     <Body>
@@ -34,32 +34,67 @@ const App = () => (
       </p>
 
       <ButtonWrapper>
-        <A href="https://medium.com/@evenchange4/latest">Medium Stories</A>
-        <A href="https://github.com/evenchange4/michaelhsu.tw">Source Code</A>
+        <A
+          href="https://medium.com/@evenchange4/latest"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Medium Stories
+        </A>
+        <A
+          href="https://github.com/evenchange4/michaelhsu.tw"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Source Code
+        </A>
       </ButtonWrapper>
 
       <IconWrapper>
-        <a href="mailto:evenchange4@gmail.com">
+        <a
+          href="mailto:evenchange4@gmail.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={email} alt="email" />
         </a>
-        <a href="https://github.com/evenchange4">
+        <a
+          href="https://github.com/evenchange4"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={github} alt="github" />
         </a>
-        <a href="https://twitter.com/evenchange4">
+        <a
+          href="https://twitter.com/evenchange4"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={twitter} alt="twitter" />
         </a>
-        <a href="https://www.linkedin.com/in/evenchange4">
+        <a
+          href="https://www.linkedin.com/in/evenchange4"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={linkedin} alt="linkedin" />
         </a>
-        <a href="http://old.michaelhsu.tw/">
+        <a
+          href="http://old.michaelhsu.tw/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={blog} alt="blog" />
         </a>
-        <a href="http://about.michaelhsu.tw/">
+        <a
+          href="http://about.michaelhsu.tw/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <img src={michael} alt="About me" />
         </a>
       </IconWrapper>
     </Body>
-  </div>
-);
+  </div>;
 
 export default App;
