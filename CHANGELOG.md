@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.2]
+> Jun 20, 2017
+
 * feat(ga): add autotrack & ncu
 
 ## [v1.1.1]
