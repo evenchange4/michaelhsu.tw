@@ -3,7 +3,7 @@
   "name": "michaelhsu.tw",
   "version": "1.1.2",
   "dependencies": {
-    "normalize.css": "^7.0.0",
+    "polished": "^1.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-media": "^1.5.1",
@@ -16,7 +16,7 @@
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^1.0.4",
     "eslint-plugin-flowtype": "^2.34.0",
-    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.1.0",
     "prettier": "^1.4.4",
