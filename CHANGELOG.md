@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* chore(PWA): enable PWA features
+
 ## [v1.1.2]
 > Jun 20, 2017
 

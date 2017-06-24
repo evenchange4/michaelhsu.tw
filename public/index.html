@@ -2,14 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon.ico">
+    <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
+
     <meta name="theme-color" content="#00A1DE">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <!-- CONFIGURATION for safari ref: http://taylor.fausak.me/2015/01/27/ios-8-web-apps/ -->
+    <!-- Allow web app to be run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Make the app title different than the page title. -->
+    <meta name="apple-mobile-web-app-title" content="%REACT_APP_NAME%">
+    <!-- Configure the status bar. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Icons ref: https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/ -->
+    <link rel="apple-touch-icon-precomposed" href="%PUBLIC_URL%/images/image_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="%PUBLIC_URL%/images/image_120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="%PUBLIC_URL%/images/image_152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="%PUBLIC_URL%/images/image_167.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="%PUBLIC_URL%/images/image_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="512x512" href="%PUBLIC_URL%/images/image_512.png">
+    <link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="%PUBLIC_URL%/images/image_1024.png">
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,30 +44,26 @@
     <title>%REACT_APP_NAME% - %REACT_APP_TITLE%</title>
     <!-- Search Engine -->
     <meta name="description" content="%REACT_APP_DESC1%">
-    <meta name="image" content="%PUBLIC_URL%/michael.jpeg">
+    <meta name="image" content="%PUBLIC_URL%/images/image_512.jpg">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
     <meta itemprop="description" content="%REACT_APP_DESC1%">
-    <meta itemprop="image" content="%PUBLIC_URL%/michael.jpeg">
+    <meta itemprop="image" content="%PUBLIC_URL%/images/image_512.jpg">
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
     <meta name="twitter:description" content="%REACT_APP_DESC1%">
     <meta name="twitter:site" content="@%REACT_APP_USER_ID%">
     <meta name="twitter:creator" content="@%REACT_APP_USER_ID%">
-    <meta name="twitter:image" content="%PUBLIC_URL%/michael.jpeg">
-    <meta name="twitter:image:src" content="%PUBLIC_URL%/michael.jpeg">
+    <meta name="twitter:image" content="https://github.com/evenchange4/michaelhsu.tw/raw/master/public/images/image_512.jpg">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
     <meta name="og:description" content="%REACT_APP_DESC1%">
-    <meta name="og:image" content="%PUBLIC_URL%/michael.jpeg">
+    <meta name="og:image" content="%PUBLIC_URL%/images/image_512.jpg">
     <meta name="og:url" content="%REACT_APP_URL%">
     <meta name="og:site_name" content="%REACT_APP_NAME% - %REACT_APP_TITLE%">
     <meta name="og:type" content="website">
-
-    <!-- GA -->
-    <script async src="https://www.google-analytics.com/analytics.js"></script>
-    <script async src="https://unpkg.com/autotrack/autotrack.js"></script>
+    <meta property="og:locale" content="en">
   </head>
   <body>
     <div id="root"></div>
@@ -59,9 +73,13 @@
 
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start`.
-      To create a production bundle, use `npm run build`.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async src="https://unpkg.com/autotrack/autotrack.js"></script>
   </body>
 </html>

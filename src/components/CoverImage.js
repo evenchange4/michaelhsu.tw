@@ -25,6 +25,7 @@ window.matchMedia =
 
 const StyledProgressiveImage = styled(ProgressiveImage)`
   height: calc(100vh - 120px);
+  width: auto;
   background-color: aliceblue;
   background-size: cover;
   background-attachment: fixed;
