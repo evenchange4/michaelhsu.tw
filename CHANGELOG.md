@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.4]
+> Jun 30, 2017
+
+* feat(ncu): update CRA to 1.0.10 & update react-progressive-bg-image to 1.1.2 for safari bug
+
 ## [v1.1.3]
 > Jun 25, 2017
 

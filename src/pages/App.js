@@ -19,8 +19,12 @@ const App = () =>
     <Body>
       <Avatar />
       <Center>
-        <h1><A href="/">Michael Hsu</A></h1>
-        <h3><b>Front-End Developer</b></h3>
+        <h1>
+          <A href="/">Michael Hsu</A>
+        </h1>
+        <h3>
+          <b>Front-End Developer</b>
+        </h3>
       </Center>
       <p>
         Hi, I am a web developer and love to learn new things about front-end
@@ -29,8 +33,8 @@ const App = () =>
         text mining, machine learning, NLP and data mining for big data.
       </p>
       <p>
-        I think everyone in the world has the power to share knowledges,
-        so I enjoy sharing things on my blog.
+        I think everyone in the world has the power to share knowledges, so I
+        enjoy sharing things on my blog.
       </p>
 
       <ButtonWrapper>
