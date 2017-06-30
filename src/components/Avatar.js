@@ -13,7 +13,7 @@ const Avatar = styled.div`
   margin-bottom: -50px;
   border: 2px solid white;
   border-radius: 50px;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
 `;
 
 Avatar.displayName = 'Avatar';
