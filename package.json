@@ -7,8 +7,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-media": "^1.5.1",
-    "react-progressive-bg-image": "^1.1.2",
-    "styled-components": "^2.1.0"
+    "react-progressive-bg-image": "^2.0.4",
+    "styled-components": "^2.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

@@ -3,6 +3,12 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.5]
+> Jul 04, 2017
+
+* chore(ncu): update react-progressive-bg-image to 2.0
+* chore(yarn): upgrade to 0.27.5
+
 ## [v1.1.4]
 > Jun 30, 2017
 

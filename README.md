@@ -10,7 +10,7 @@
 
 -   node >= 8.0.0
 -   npm >= 5.0.0
--   yarn >= 0.24.6
+-   yarn >= 0.27.5
 
 ## Technology Stacks
 
