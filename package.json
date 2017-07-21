@@ -3,25 +3,33 @@
   "name": "michaelhsu.tw",
   "version": "1.1.5",
   "dependencies": {
-    "polished": "^1.2.1",
+    "polished": "^1.3.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-media": "^1.5.1",
+    "react-media": "^1.6.1",
     "react-progressive-bg-image": "^2.0.4",
     "styled-components": "^2.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "codecov": "^2.2.0",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-config-prettier": "^2.3.0",
     "eslint-config-react-app": "^1.0.5",
-    "eslint-plugin-flowtype": "^2.34.1",
-    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
-    "prettier": "^1.5.2",
+    "jest-styled-components": "^4.2.0",
+    "prettier": "^1.5.3",
     "react-scripts": "^1.0.10",
-    "react-snapshot": "^1.1.0"
+    "react-snapshot": "^1.1.0",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +38,44 @@
     "test:watch": "react-scripts test --env=jsdom",
     "eslint": "eslint ./",
     "format": "prettier --trailing-comma all --single-quote --write 'src/**/*.js'"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "react-app",
+      "airbnb",
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react",
+      "plugin:jest/recommended"
+    ],
+    "plugins": [
+      "prettier",
+      "jest"
+    ],
+    "env": {
+      "jest/globals": true
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "react/forbid-prop-types": 0,
+      "react/require-default-props": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "all"
+        }
+      ]
+    }
   }
 }

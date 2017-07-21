@@ -15,11 +15,11 @@ import portrait from '../statics/images/portrait.jpg';
  */
 window.matchMedia =
   window.matchMedia ||
-  function() {
+  function matchMedia() {
     return {
-      matches: true,
-      addListener: function() {},
-      removeListener: function() {},
+      matches: true, // Desktop First
+      addListener: () => {},
+      removeListener: () => {},
     };
   };
 

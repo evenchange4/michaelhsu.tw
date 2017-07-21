@@ -3,6 +3,10 @@
 ## [HEAD]
 > Unreleased
 
+* chore(ncu): update NODE to 8.1.4
+* chore(eslint): update rules
+
+
 ## [v1.1.5]
 > Jul 04, 2017
 
