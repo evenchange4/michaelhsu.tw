@@ -1,0 +1,346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct snapshot 1`] = `
+.c1 {
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  opacity: 0.5;
+  filter: blur(20px);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 {
+  height: calc(100vh - 120px);
+  width: auto;
+  background-color: aliceblue;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 70%;
+  background-position-x: center;
+  overflow: hidden;
+}
+
+.c2 {
+  padding: 0 15px;
+  margin: 0 auto;
+  background: white;
+}
+
+.c3 {
+  background-image: url(michael.jpeg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  border: 2px solid white;
+  border-radius: 50px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.c4 {
+  text-align: center;
+}
+
+.c5 {
+  text-decoration: none;
+  color: black;
+}
+
+.c6 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.c6 a {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  text-decoration: underline;
+  padding: 0 8px;
+}
+
+.c6 a + a {
+  margin-left: 15px;
+}
+
+.c7 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.c7 a {
+  cursor: pointer;
+}
+
+.c7 img {
+  width: 30px;
+  border-radius: 3px;
+}
+
+.c7 a + a {
+  margin-left: 15px;
+}
+
+@media (min-width: 600px) {
+  .c2 {
+    width: 600px;
+  }
+}
+
+<App>
+  <div>
+    <CoverImage>
+      <Media
+        defaultMatches={true}
+        query={
+          Object {
+            "minWidth": 1000,
+          }
+        }
+      >
+        <Styled(ProgressiveImage)
+          placeholder="landscapeX60.jpg"
+          src="landscape.jpg"
+        >
+          <ProgressiveImage
+            blur={20}
+            className="c0"
+            component="div"
+            opacity={0.5}
+            placeholder="landscapeX60.jpg"
+            scale={1}
+            src="landscape.jpg"
+            transition="opacity 0.3s linear"
+          >
+            <mapPropsStream(Img)
+              blur={20}
+              className="c0"
+              component="div"
+              opacity={0.5}
+              placeholder="landscapeX60.jpg"
+              scale={1}
+              src="landscape.jpg"
+              transition="opacity 0.3s linear"
+            >
+              <Img
+                blur={20}
+                className="c0"
+                component="div"
+                image="landscapeX60.jpg"
+                isCached={false}
+                isLoaded={false}
+                opacity={0.5}
+                placeholder="landscapeX60.jpg"
+                scale={1}
+                src="landscape.jpg"
+                transition="opacity 0.3s linear"
+              >
+                <Styled(BaseComponent)
+                  blur={20}
+                  className="c0"
+                  component="div"
+                  isCached={false}
+                  isLoaded={false}
+                  opacity={0.5}
+                  placeholder="landscapeX60.jpg"
+                  scale={1}
+                  src="landscape.jpg"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"landscapeX60.jpg\\")",
+                    }
+                  }
+                  transition="opacity 0.3s linear"
+                >
+                  <BaseComponent
+                    blur={20}
+                    className="c0 c1"
+                    component="div"
+                    isCached={false}
+                    isLoaded={false}
+                    opacity={0.5}
+                    placeholder="landscapeX60.jpg"
+                    scale={1}
+                    src="landscape.jpg"
+                    style={
+                      Object {
+                        "backgroundImage": "url(\\"landscapeX60.jpg\\")",
+                      }
+                    }
+                    transition="opacity 0.3s linear"
+                  >
+                    <div
+                      className="c0 c1"
+                      src="landscape.jpg"
+                      style={
+                        Object {
+                          "backgroundImage": "url(\\"landscapeX60.jpg\\")",
+                        }
+                      }
+                    />
+                  </BaseComponent>
+                </Styled(BaseComponent)>
+              </Img>
+            </mapPropsStream(Img)>
+          </ProgressiveImage>
+        </Styled(ProgressiveImage)>
+      </Media>
+    </CoverImage>
+    <Body>
+      <div
+        className="c2"
+      >
+        <Avatar>
+          <div
+            className="c3"
+          />
+        </Avatar>
+        <Center>
+          <div
+            className="c4"
+          >
+            <h1>
+              <A
+                href="/"
+              >
+                <a
+                  className="c5"
+                  href="/"
+                >
+                  Michael Hsu
+                </a>
+              </A>
+            </h1>
+            <h3>
+              <b>
+                Front-End Developer
+              </b>
+            </h3>
+          </div>
+        </Center>
+        <p>
+          Hi, I am a web developer and love to learn new things about front-end technology such as JS, React and functional reactive programming. Besides of that, I am interested in researching information retrieval, text mining, machine learning, NLP and data mining for big data.
+        </p>
+        <p>
+          I think everyone in the world has the power to share knowledges, so I enjoy sharing things on my blog.
+        </p>
+        <ButtonWrapper>
+          <div
+            className="c6"
+          >
+            <A
+              href="https://medium.com/@evenchange4/latest"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <a
+                className="c5"
+                href="https://medium.com/@evenchange4/latest"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Medium Stories
+              </a>
+            </A>
+            <A
+              href="https://github.com/evenchange4/michaelhsu.tw"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <a
+                className="c5"
+                href="https://github.com/evenchange4/michaelhsu.tw"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Source Code
+              </a>
+            </A>
+          </div>
+        </ButtonWrapper>
+        <IconWrapper>
+          <div
+            className="c7"
+          >
+            <a
+              href="mailto:evenchange4@gmail.com"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="email"
+                src="email.svg"
+              />
+            </a>
+            <a
+              href="https://github.com/evenchange4"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="github"
+                src="github.svg"
+              />
+            </a>
+            <a
+              href="https://twitter.com/evenchange4"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="twitter"
+                src="twitter.svg"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/evenchange4"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="linkedin"
+                src="linkedin.svg"
+              />
+            </a>
+            <a
+              href="http://old.michaelhsu.tw/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="blog"
+                src="blog.svg"
+              />
+            </a>
+            <a
+              href="http://about.michaelhsu.tw/"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt="About me"
+                src="michael.jpeg"
+              />
+            </a>
+          </div>
+        </IconWrapper>
+      </div>
+    </Body>
+  </div>
+</App>
+`;
