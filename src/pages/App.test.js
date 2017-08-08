@@ -5,6 +5,13 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import App from './App';
 
+window.fetch = () =>
+  new Promise(resolve =>
+    resolve({
+      json: () => [],
+    }),
+  );
+
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);

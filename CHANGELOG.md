@@ -3,9 +3,9 @@
 ## [HEAD]
 > Unreleased
 
-* chore(ncu): update NODE to 8.1.4
+* chore(ncu): update NODE to 8.2.1
 * chore(eslint): update rules
-
+* feat(medium): use micro-medium-api for latest posts
 
 ## [v1.1.5]
 > Jul 04, 2017

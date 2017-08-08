@@ -1,23 +1,28 @@
 import React from 'react';
+import Envelope from 'react-icons/lib/fa/envelope-square';
+import GitHub from 'react-icons/lib/fa/github';
+import Twitter from 'react-icons/lib/fa/twitter-square';
+import Linkedin from 'react-icons/lib/fa/linkedin-square';
 import CoverImage from '../components/CoverImage';
 import Body from '../components/Body';
 import Avatar from '../components/Avatar';
 import Center from '../components/Center';
 import A from '../components/A';
-import ButtonWrapper from '../components/ButtonWrapper';
 import IconWrapper from '../components/IconWrapper';
-import github from '../statics/images/socials/github.svg';
-import twitter from '../statics/images/socials/twitter.svg';
-import blog from '../statics/images/socials/blog.svg';
-import linkedin from '../statics/images/socials/linkedin.svg';
-import email from '../statics/images/socials/email.svg';
-import michael from '../statics/images/michael.jpeg';
+import PostContainer from '../components/PostContainer';
 
 const App = () =>
   <div>
     <CoverImage />
     <Body>
-      <Avatar />
+      <A
+        href="https://github.com/evenchange4/michaelhsu.tw"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <Avatar />
+      </A>
+
       <Center>
         <h1>
           <A href="/">Michael Hsu</A>
@@ -37,22 +42,7 @@ const App = () =>
         enjoy sharing things on my blog.
       </p>
 
-      <ButtonWrapper>
-        <A
-          href="https://medium.com/@evenchange4/latest"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Medium Stories
-        </A>
-        <A
-          href="https://github.com/evenchange4/michaelhsu.tw"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Source Code
-        </A>
-      </ButtonWrapper>
+      <PostContainer />
 
       <IconWrapper>
         <a
@@ -60,43 +50,43 @@ const App = () =>
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={email} alt="email" />
+          <Envelope size={24} />
         </a>
         <a
           href="https://github.com/evenchange4"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={github} alt="github" />
+          <GitHub size={24} />
         </a>
         <a
           href="https://twitter.com/evenchange4"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={twitter} alt="twitter" />
+          <Twitter size={24} />
         </a>
         <a
           href="https://www.linkedin.com/in/evenchange4"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={linkedin} alt="linkedin" />
+          <Linkedin size={24} />
         </a>
-        <a
+        {/* <a
           href="http://old.michaelhsu.tw/"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={blog} alt="blog" />
+          <Archive size={24} />
         </a>
         <a
           href="http://about.michaelhsu.tw/"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <img src={michael} alt="About me" />
-        </a>
+          <User size={24} />
+        </a> */}
       </IconWrapper>
     </Body>
   </div>;

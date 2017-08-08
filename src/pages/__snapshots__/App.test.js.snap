@@ -30,7 +30,7 @@ exports[`renders correct snapshot 1`] = `
   background: white;
 }
 
-.c3 {
+.c4 {
   background-image: url(michael.jpeg);
   background-size: cover;
   margin-left: auto;
@@ -42,61 +42,37 @@ exports[`renders correct snapshot 1`] = `
   margin-bottom: -50px;
   border: 2px solid white;
   border-radius: 50px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
-}
-
-.c4 {
-  text-align: center;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
 }
 
 .c5 {
+  text-align: center;
+}
+
+.c3 {
   text-decoration: none;
   color: black;
 }
 
 .c6 {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .c6 a {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   cursor: pointer;
-  height: 40px;
-  text-decoration: underline;
-  padding: 0 8px;
 }
 
 .c6 a + a {
   margin-left: 15px;
 }
 
-.c7 {
-  text-align: center;
-  margin-bottom: 15px;
+.c6 svg {
+  color: white;
+  stroke: #999a94;
 }
 
-.c7 a {
-  cursor: pointer;
-}
-
-.c7 img {
-  width: 30px;
-  border-radius: 3px;
-}
-
-.c7 a + a {
-  margin-left: 15px;
-}
-
-@media (min-width: 600px) {
+@media (min-width:600px) {
   .c2 {
     width: 600px;
   }
@@ -205,21 +181,34 @@ exports[`renders correct snapshot 1`] = `
       <div
         className="c2"
       >
-        <Avatar>
-          <div
+        <A
+          href="https://github.com/evenchange4/michaelhsu.tw"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <a
             className="c3"
-          />
-        </Avatar>
+            href="https://github.com/evenchange4/michaelhsu.tw"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Avatar>
+              <div
+                className="c4"
+              />
+            </Avatar>
+          </a>
+        </A>
         <Center>
           <div
-            className="c4"
+            className="c5"
           >
             <h1>
               <A
                 href="/"
               >
                 <a
-                  className="c5"
+                  className="c3"
                   href="/"
                 >
                   Michael Hsu
@@ -239,103 +228,146 @@ exports[`renders correct snapshot 1`] = `
         <p>
           I think everyone in the world has the power to share knowledges, so I enjoy sharing things on my blog.
         </p>
-        <ButtonWrapper>
-          <div
-            className="c6"
-          >
-            <A
-              href="https://medium.com/@evenchange4/latest"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <a
-                className="c5"
-                href="https://medium.com/@evenchange4/latest"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                Medium Stories
-              </a>
-            </A>
-            <A
-              href="https://github.com/evenchange4/michaelhsu.tw"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <a
-                className="c5"
-                href="https://github.com/evenchange4/michaelhsu.tw"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                Source Code
-              </a>
-            </A>
-          </div>
-        </ButtonWrapper>
+        <PostContainer />
         <IconWrapper>
           <div
-            className="c7"
+            className="c6"
           >
             <a
               href="mailto:evenchange4@gmail.com"
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img
-                alt="email"
-                src="email.svg"
-              />
+              <FaEnvelopeSquare
+                size={24}
+              >
+                <IconBase
+                  size={24}
+                  viewBox="0 0 40 40"
+                >
+                  <svg
+                    fill="currentColor"
+                    height={24}
+                    preserveAspectRatio="xMidYMid meet"
+                    style={
+                      Object {
+                        "color": undefined,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                    viewBox="0 0 40 40"
+                    width={24}
+                  >
+                    <g>
+                      <path
+                        d="m30.9 2.9q2.6 0 4.5 1.8t1.9 4.6v21.4q0 2.7-1.9 4.6t-4.5 1.8h-21.5q-2.6 0-4.5-1.8t-1.9-4.6v-21.4q0-2.7 1.9-4.6t4.5-1.8h21.5z m0.7 23.5v-9.7q-0.7 0.8-1.5 1.2-0.7 0.5-2.9 1.9t-3.4 2.2q-2.2 1.6-3.7 1.6-1.4 0-3.6-1.6-1-0.7-3.2-2t-3.2-2.1q-0.2-0.2-0.7-0.6t-0.7-0.6v9.7q0 0.9 0.6 1.5t1.6 0.7h18.5q0.9 0 1.5-0.7t0.7-1.5z m0-12.8q0-0.9-0.6-1.5t-1.6-0.7h-18.5q-0.9 0-1.6 0.7t-0.6 1.5q0 0.8 0.7 1.7t1.5 1.4q1.1 0.7 3.1 2t2.9 1.9l0.3 0.2 0.5 0.3 0.5 0.3 0.5 0.3 0.5 0.2 0.5 0.2 0.4 0 0.5 0 0.5-0.2 0.5-0.2 0.5-0.3 0.5-0.3 0.4-0.3 0.4-0.2 6-3.9q0.8-0.5 1.5-1.4t0.7-1.7z"
+                      />
+                    </g>
+                  </svg>
+                </IconBase>
+              </FaEnvelopeSquare>
             </a>
             <a
               href="https://github.com/evenchange4"
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img
-                alt="github"
-                src="github.svg"
-              />
+              <FaGithub
+                size={24}
+              >
+                <IconBase
+                  size={24}
+                  viewBox="0 0 40 40"
+                >
+                  <svg
+                    fill="currentColor"
+                    height={24}
+                    preserveAspectRatio="xMidYMid meet"
+                    style={
+                      Object {
+                        "color": undefined,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                    viewBox="0 0 40 40"
+                    width={24}
+                  >
+                    <g>
+                      <path
+                        d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6q0 5.6-3.3 10.1t-8.4 6.2q-0.6 0.1-0.9-0.2t-0.3-0.7q0 0 0-1.7t0-3q0-2.1-1.2-3.1 1.3-0.2 2.3-0.4t2.1-0.9 1.8-1.5 1.2-2.3 0.5-3.4q0-2.7-1.8-4.6 0.8-2-0.2-4.5-0.6-0.2-1.8 0.2t-2 1l-0.9 0.5q-2-0.6-4.3-0.6t-4.2 0.6q-0.4-0.2-1-0.6t-1.9-0.8-1.9-0.3q-1 2.5-0.1 4.5-1.8 1.9-1.8 4.6 0 1.9 0.5 3.4t1.1 2.3 1.8 1.5 2.1 0.9 2.3 0.4q-0.9 0.8-1.1 2.3-0.4 0.2-1 0.3t-1.3 0.1-1.4-0.5-1.3-1.4q-0.4-0.7-1-1.1t-1.1-0.6l-0.5 0q-0.5 0-0.6 0.1t-0.1 0.2 0.2 0.3 0.2 0.3l0.2 0.1q0.5 0.2 1 0.9t0.7 1.1l0.2 0.5q0.3 0.9 1 1.4t1.5 0.7 1.5 0.1 1.3-0.1l0.5 0q0 0.8 0 1.9t0 1.2q0 0.5-0.3 0.7t-0.9 0.2q-5.2-1.7-8.4-6.2t-3.3-10.1q0-4.7 2.3-8.6t6.2-6.2 8.6-2.3z m-10.6 24.6q0.1-0.2-0.2-0.3-0.2-0.1-0.2 0.1-0.1 0.1 0.1 0.2 0.2 0.2 0.3 0z m0.7 0.7q0.1-0.1-0.1-0.3-0.2-0.2-0.3-0.1-0.2 0.1 0 0.4 0.3 0.2 0.4 0z m0.7 1q0.2-0.1 0-0.4-0.2-0.3-0.4-0.1-0.2 0.1 0 0.4t0.4 0.1z m0.9 1q0.2-0.2-0.1-0.4-0.3-0.3-0.4-0.1-0.2 0.2 0 0.4 0.3 0.3 0.5 0.1z m1.3 0.5q0-0.2-0.3-0.3-0.4-0.1-0.4 0.1t0.2 0.4q0.4 0.1 0.5-0.2z m1.4 0.1q0-0.2-0.4-0.2-0.4 0-0.4 0.2 0 0.3 0.4 0.3 0.4 0 0.4-0.3z m1.3-0.2q-0.1-0.2-0.4-0.2-0.4 0.1-0.3 0.4t0.4 0.1 0.3-0.3z"
+                      />
+                    </g>
+                  </svg>
+                </IconBase>
+              </FaGithub>
             </a>
             <a
               href="https://twitter.com/evenchange4"
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img
-                alt="twitter"
-                src="twitter.svg"
-              />
+              <FaTwitterSquare
+                size={24}
+              >
+                <IconBase
+                  size={24}
+                  viewBox="0 0 40 40"
+                >
+                  <svg
+                    fill="currentColor"
+                    height={24}
+                    preserveAspectRatio="xMidYMid meet"
+                    style={
+                      Object {
+                        "color": undefined,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                    viewBox="0 0 40 40"
+                    width={24}
+                  >
+                    <g>
+                      <path
+                        d="m31.6 13.6q-1.3 0.6-2.7 0.8 1.5-0.9 2-2.6-1.4 0.8-2.9 1.1-1.4-1.5-3.5-1.5-1.9 0-3.3 1.4t-1.3 3.3q0 0.7 0.1 1.1-2.9-0.2-5.4-1.5t-4.3-3.4q-0.7 1.1-0.7 2.3 0 2.6 2.1 3.9-1.1 0-2.3-0.5v0q0 1.7 1.1 3t2.8 1.6q-0.7 0.2-1.1 0.2-0.3 0-0.9-0.1 0.4 1.4 1.6 2.3t2.8 1q-2.6 2-5.9 2-0.6 0-1.1-0.1 3.3 2.1 7.2 2.1 2.5 0 4.7-0.8t3.7-2.1 2.7-3.1 1.7-3.6 0.5-3.7q0-0.4 0-0.7 1.4-1 2.4-2.4z m5.7-4.3v21.4q0 2.7-1.9 4.6t-4.5 1.8h-21.5q-2.6 0-4.5-1.8t-1.9-4.6v-21.4q0-2.7 1.9-4.6t4.5-1.8h21.5q2.6 0 4.5 1.8t1.9 4.6z"
+                      />
+                    </g>
+                  </svg>
+                </IconBase>
+              </FaTwitterSquare>
             </a>
             <a
               href="https://www.linkedin.com/in/evenchange4"
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img
-                alt="linkedin"
-                src="linkedin.svg"
-              />
-            </a>
-            <a
-              href="http://old.michaelhsu.tw/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt="blog"
-                src="blog.svg"
-              />
-            </a>
-            <a
-              href="http://about.michaelhsu.tw/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt="About me"
-                src="michael.jpeg"
-              />
+              <FaLinkedinSquare
+                size={24}
+              >
+                <IconBase
+                  size={24}
+                  viewBox="0 0 40 40"
+                >
+                  <svg
+                    fill="currentColor"
+                    height={24}
+                    preserveAspectRatio="xMidYMid meet"
+                    style={
+                      Object {
+                        "color": undefined,
+                        "verticalAlign": "middle",
+                      }
+                    }
+                    viewBox="0 0 40 40"
+                    width={24}
+                  >
+                    <g>
+                      <path
+                        d="m8.3 31.6h5.1v-15.5h-5.1v15.5z m5.5-20.3q0-1.2-0.8-1.9t-2.1-0.8-2.1 0.8-0.8 1.9q0 1.1 0.8 1.9t2 0.8h0.1q1.3 0 2.1-0.8t0.8-1.9z m13 20.3h5.2v-8.9q0-3.5-1.6-5.2t-4.3-1.8q-3.1 0-4.7 2.6h0v-2.2h-5.1q0 1.4 0 15.5h5.1v-8.7q0-0.8 0.2-1.2 0.3-0.8 1-1.4t1.7-0.5q2.5 0 2.5 3.5v8.3z m10.5-22.3v21.4q0 2.7-1.9 4.6t-4.5 1.8h-21.5q-2.6 0-4.5-1.8t-1.9-4.6v-21.4q0-2.7 1.9-4.6t4.5-1.8h21.5q2.6 0 4.5 1.8t1.9 4.6z"
+                      />
+                    </g>
+                  </svg>
+                </IconBase>
+              </FaLinkedinSquare>
             </a>
           </div>
         </IconWrapper>
