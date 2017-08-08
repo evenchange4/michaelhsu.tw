@@ -8,13 +8,13 @@ const IconWrapper = styled.div`
     cursor: pointer;
   }
 
-  img {
-    width: 30px;
-    border-radius: 3px;
-  }
-
   a + a {
     margin-left: 15px;
+  }
+
+  svg {
+    color: white;
+    stroke: #999a94;
   }
 `;
 

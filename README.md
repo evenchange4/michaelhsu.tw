@@ -13,8 +13,8 @@
 
 ## Requirements
 
--   node >= 8.1.4
--   npm >= 5.0.3
+-   node >= 8.2.1
+-   npm >= 5.3.0
 -   yarn >= 0.27.5
 
 ## Technology Stacks
@@ -30,6 +30,7 @@
 -   React-media: A CSS media query component for React
 -   [Jest-styled-components](https://github.com/styled-components/jest-styled-components): Jest snapshot utilities for Styled Components
 -   Prettier, Eslint: Coding style
+-   [Micro-medium-api](https://github.com/evenchange4/micro-medium-api): Microservice for fetching the latest posts of Medium.
 
 ## Development
 
