@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.3.0]
+> Aug 17, 2017
+
 * fix(API): switch to graphql
 
 ## [v1.2.0]
