@@ -9,7 +9,7 @@ const getFetchURL = R.pipe(
     [R.test(/michaelhsu\.tw/), R.always(MICRO_MIDIUM_API_ORIGIN)],
     [R.T, R.always(MICRO_MIDIUM_API_CORS)],
   ]),
-  R.concat(R.__, '/@evenchange4/posts?limit=100&type=simple'), // eslint-disable-line
+  R.concat(R.__, '/graphql'), // eslint-disable-line
 );
 
 export default getFetchURL;

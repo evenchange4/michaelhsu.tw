@@ -5,12 +5,14 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import App from './App';
 
-window.fetch = () =>
-  new Promise(resolve =>
-    resolve({
-      json: () => [],
-    }),
-  );
+jest.mock('apollo-fetch', () => ({
+  createApolloFetch: () => () =>
+    new Promise(resolve =>
+      resolve({
+        data: { posts: [] },
+      }),
+    ),
+}));
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
