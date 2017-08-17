@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* feat(env): upgrade node to 8.4.0
+
 ## [v1.3.0]
 > Aug 17, 2017
 
