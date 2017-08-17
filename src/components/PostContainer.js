@@ -2,6 +2,7 @@ import React from 'react';
 import R from 'ramda';
 import styled from 'styled-components';
 import format from 'date-fns/format';
+import { createApolloFetch } from 'apollo-fetch';
 import getFetchURL from '../utils/getFetchURL';
 import A from '../components/A';
 import B from '../components/B';
@@ -47,8 +48,25 @@ const StyledA = styled.a`
 class PostContainer extends React.PureComponent {
   state = { posts: [] };
   componentDidMount() {
-    fetch(getFetchURL(window))
-      .then(data => data.json())
+    const apolloFetch = createApolloFetch({ uri: getFetchURL(window) });
+
+    apolloFetch({
+      query: `query PostQuery($username: String!, $limit: Int!){
+        posts(username: $username, limit: $limit) {
+          title
+          firstPublishedAt
+          url
+          content {
+            subtitle
+          }
+        }
+      }`,
+      variables: `{
+        "username": "evenchange4",
+        "limit": 100
+      }`,
+    })
+      .then(({ data }) => data.posts)
       .then(posts => this.setState({ posts }))
       .catch(error => console.log(error)); // eslint-disable-line
   }
@@ -82,7 +100,7 @@ class PostContainer extends React.PureComponent {
                 {e.title}
               </B>
               <Small>
-                {e.subtitle}
+                {e.content.subtitle}
               </Small>
             </TitleWrapper>
             <DateWrapper>
