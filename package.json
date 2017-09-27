@@ -7,7 +7,7 @@
     "date-fns": "^1.28.5",
     "polished": "^1.4.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "^16.0.0",
     "react-icons": "^2.2.5",
     "react-media": "^1.6.1",
     "react-progressive-bg-image": "^2.0.4",
