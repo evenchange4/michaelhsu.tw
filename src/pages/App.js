@@ -11,7 +11,7 @@ import A from '../components/A';
 import IconWrapper from '../components/IconWrapper';
 import PostContainer from '../components/PostContainer';
 
-const App = () =>
+const App = () => (
   <div>
     <CoverImage />
     <Body>
@@ -89,6 +89,7 @@ const App = () =>
         </a> */}
       </IconWrapper>
     </Body>
-  </div>;
+  </div>
+);
 
 export default App;
