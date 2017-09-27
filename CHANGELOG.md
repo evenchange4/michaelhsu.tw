@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.4.0]
+> Aug 17, 2017
+
 * feat(env): upgrade node to 8.4.0
 * docs(LICENSE): update year
 * chore(package): ncu update React 16
