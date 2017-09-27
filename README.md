@@ -13,9 +13,9 @@
 
 ## Requirements
 
--   node >= 8.4.0
+-   node >= 8.6.0
 -   npm >= 5.3.0
--   yarn >= 0.27.5
+-   yarn >= 1.1.0
 
 ## Technology Stacks
 

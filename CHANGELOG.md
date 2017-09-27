@@ -4,6 +4,10 @@
 > Unreleased
 
 * feat(env): upgrade node to 8.4.0
+* docs(LICENSE): update year
+* chore(package): ncu update React 16
+* style: update prettier & extract prettier config
+* chore(env): use node 8.6.0 & yarn 1.1.0 & add nvmrc for netlify
 
 ## [v1.3.0]
 > Aug 17, 2017

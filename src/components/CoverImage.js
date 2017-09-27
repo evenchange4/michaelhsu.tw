@@ -29,19 +29,21 @@ const StyledProgressiveImage = styled(ProgressiveImage)`
   background-color: aliceblue;
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: 70%;
+  background-position-y: 60%;
   background-position-x: center;
   overflow: hidden;
 `;
 
-const CoverImage = () =>
+const CoverImage = () => (
   <Media query={{ minWidth: 1000 }}>
-    {matches =>
+    {matches => (
       <StyledProgressiveImage
         src={matches ? landscape : portrait}
         placeholder={matches ? landscapeX60 : portraitX60}
-      />}
-  </Media>;
+      />
+    )}
+  </Media>
+);
 
 CoverImage.displayName = 'CoverImage';
 

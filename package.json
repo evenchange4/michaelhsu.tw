@@ -5,34 +5,35 @@
   "dependencies": {
     "apollo-fetch": "^0.6.0",
     "date-fns": "^1.28.5",
-    "polished": "^1.4.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "polished": "^1.7.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-icons": "^2.2.5",
     "react-media": "^1.6.1",
-    "react-progressive-bg-image": "^2.0.4",
+    "react-progressive-bg-image": "^2.1.1",
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.1",
     "codecov": "^2.3.0",
-    "enzyme": "^2.9.1",
-    "enzyme-to-json": "^1.5.1",
-    "eslint": "^4.4.1",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "enzyme-to-json": "^3.0.1",
+    "eslint": "^4.7.2",
     "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^2.3.0",
-    "eslint-config-react-app": "^2.0.0",
-    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.36.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jest": "^21.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-plugin-react": "^7.2.1",
-    "jest-styled-components": "^4.4.0",
-    "prettier": "^1.5.3",
-    "react-scripts": "^1.0.11",
-    "react-snapshot": "^1.1.0",
-    "react-test-renderer": "^15.6.1"
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "jest-styled-components": "^4.6.0",
+    "prettier": "^1.7.0",
+    "react-scripts": "^1.0.14",
+    "react-snapshot": "^1.2.0",
+    "react-test-renderer": "^16.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,7 +41,11 @@
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
     "eslint": "eslint ./",
-    "format": "prettier --trailing-comma all --single-quote --write 'src/**/*.js'"
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -72,13 +77,7 @@
       "jsx-a11y/no-static-element-interactions": 0,
       "react/forbid-prop-types": 0,
       "react/require-default-props": 0,
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true,
-          "trailingComma": "all"
-        }
-      ]
+      "prettier/prettier": "error"
     }
   }
 }

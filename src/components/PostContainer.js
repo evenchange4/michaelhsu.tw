@@ -75,40 +75,37 @@ class PostContainer extends React.PureComponent {
     const { posts } = this.state;
 
     return (
-      !R.isEmpty(posts) &&
-      <Wrapper>
-        {/* <hr /> */}
-        <h3>
-          <A
-            href="https://medium.com/@evenchange4/latest"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Medium Stories
-          </A>
-        </h3>
+      !R.isEmpty(posts) && (
+        <Wrapper>
+          {/* <hr /> */}
+          <h3>
+            <A
+              href="https://medium.com/@evenchange4/latest"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Medium Stories
+            </A>
+          </h3>
 
-        {posts.map(e =>
-          <StyledA
-            key={e.url}
-            href={e.url}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <TitleWrapper>
-              <B>
-                {e.title}
-              </B>
-              <Small>
-                {e.content.subtitle}
-              </Small>
-            </TitleWrapper>
-            <DateWrapper>
-              {format(new Date(e.firstPublishedAt), 'MMM DD, YYYY')}
-            </DateWrapper>
-          </StyledA>,
-        )}
-      </Wrapper>
+          {posts.map(e => (
+            <StyledA
+              key={e.url}
+              href={e.url}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <TitleWrapper>
+                <B>{e.title}</B>
+                <Small>{e.content.subtitle}</Small>
+              </TitleWrapper>
+              <DateWrapper>
+                {format(new Date(e.firstPublishedAt), 'MMM DD, YYYY')}
+              </DateWrapper>
+            </StyledA>
+          ))}
+        </Wrapper>
+      )
     );
   }
 }
