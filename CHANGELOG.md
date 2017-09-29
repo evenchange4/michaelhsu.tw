@@ -3,6 +3,8 @@
 ## [HEAD]
 > Unreleased
 
+* fix(polyfill): add raf polyfill for testing
+
 ## [v1.4.0]
 > Aug 17, 2017
 
