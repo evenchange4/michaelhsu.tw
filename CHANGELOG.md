@@ -1,7 +1,9 @@
 ## Change Log
 
-### upcoming (2018/01/16 04:54 +00:00)
+### v1.4.1 (2018/01/16 05:14 +00:00)
 
+* [fc80f81](https://github.com/evenchange4/michaelhsu.tw/commit/fc80f81ee6c3af5683927b74b48b6272a7f824e4) 1.4.1 (@evenchange4)
+* [#53](https://github.com/evenchange4/michaelhsu.tw/pull/53) chore(ncu): ncu update & use node 9 (#53) (@evenchange4)
 * [#51](https://github.com/evenchange4/michaelhsu.tw/pull/51) Configure Renovate (#51) (@renovate[bot])
 * [a4dea21](https://github.com/evenchange4/michaelhsu.tw/commit/a4dea21d8f7034b520dd8f7d49f1f8d243a65ccc) fix(polyfill): add raf polyfill for testing (@evenchange4)
 
