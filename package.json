@@ -2,66 +2,68 @@
   "private": true,
   "name": "michaelhsu.tw",
   "version": "1.4.0",
-  "dependencies": {
-    "apollo-fetch": "^0.6.0",
-    "date-fns": "^1.28.5",
-    "polished": "^1.7.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-icons": "^2.2.5",
-    "react-media": "^1.6.1",
-    "react-progressive-bg-image": "^2.1.1",
-    "styled-components": "^2.1.2"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "codecov": "^2.3.0",
-    "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.0",
-    "enzyme-to-json": "^3.0.1",
-    "eslint": "^4.7.2",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-config-react-app": "^2.0.1",
-    "eslint-plugin-flowtype": "^2.36.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^21.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.4.0",
-    "jest-styled-components": "^4.6.0",
-    "prettier": "^1.7.2",
-    "raf": "^3.3.2",
-    "react-scripts": "^1.0.14",
-    "react-snapshot": "^1.2.0",
-    "react-test-renderer": "^16.0.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
     "eslint": "eslint ./",
-    "format": "prettier --write 'src/**/*.js'"
+    "format": "prettier --write 'src/**/*.js' '*.{md,json}'",
+    "changelog":
+      "github-changes -o evenchange4 -r michaelhsu.tw -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
+  },
+  "dependencies": {
+    "apollo-fetch": "0.7.0",
+    "date-fns": "1.29.0",
+    "polished": "1.9.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-icons": "2.2.7",
+    "react-media": "1.6.1",
+    "react-progressive-bg-image": "2.1.2",
+    "styled-components": "2.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "codecov": "3.0.0",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.0",
+    "eslint": "4.15.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-flowtype": "2.41.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jest": "21.6.2",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.5.0",
+    "eslint-plugin-react": "7.5.1",
+    "github-changes": "1.1.2",
+    "husky": "0.14.3",
+    "jest-styled-components": "4.10.0",
+    "lint-staged": "6.0.0",
+    "prettier": "1.10.2",
+    "react-scripts": "1.1.0",
+    "react-snapshot": "1.3.0",
+    "react-test-renderer": "16.2.0"
   },
   "prettier": {
     "trailingComma": "all",
     "singleQuote": true
   },
+  "lint-staged": {
+    "*.{js,json,md}": ["prettier --write", "git add"]
+  },
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": [
-      "react-app",
       "airbnb",
       "prettier",
       "prettier/flowtype",
       "prettier/react",
       "plugin:jest/recommended"
     ],
-    "plugins": [
-      "prettier",
-      "jest"
-    ],
+    "plugins": ["prettier", "jest"],
     "env": {
       "jest/globals": true
     },
@@ -69,9 +71,7 @@
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [
-            ".js"
-          ]
+          "extensions": [".js"]
         }
       ],
       "import/no-extraneous-dependencies": 0,
