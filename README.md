@@ -7,7 +7,7 @@
 [![Dependency Status][dependency-badge]][dependency]
 [![devDependency Status][devdependency-badge]][devdependency]
 [![peerDependency Status][peerdependency-badge]][peerdependency]
-[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
+
 [![prettier][prettier-badge]][prettier]
 [![license][license-badge]][license]
 
@@ -97,7 +97,5 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [githubtag]: ./CHANGELOG.md
 [license-badge]: https://img.shields.io/github/license/evenchange4/michaelhsu.tw.svg?style=flat-square
 [license]: http://michaelhsu.mit-license.org/
-[greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/michaelhsu.tw.svg
-[greenkeeper]: https://greenkeeper.io/
 [prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg
 [prettier]: https://github.com/prettier/prettier
