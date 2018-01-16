@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "michaelhsu.tw",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
@@ -9,8 +9,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "eslint": "eslint ./",
     "format": "prettier --write 'src/**/*.js' '*.{md,json}'",
-    "changelog":
-      "github-changes -o evenchange4 -r michaelhsu.tw -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
+    "changelog": "github-changes -o evenchange4 -r michaelhsu.tw -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "dependencies": {
     "apollo-fetch": "0.7.0",
@@ -52,7 +51,10 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.{js,json,md}": ["prettier --write", "git add"]
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -63,7 +65,10 @@
       "prettier/react",
       "plugin:jest/recommended"
     ],
-    "plugins": ["prettier", "jest"],
+    "plugins": [
+      "prettier",
+      "jest"
+    ],
     "env": {
       "jest/globals": true
     },
@@ -71,7 +76,9 @@
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [".js"]
+          "extensions": [
+            ".js"
+          ]
         }
       ],
       "import/no-extraneous-dependencies": 0,
