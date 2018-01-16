@@ -1,4 +1,4 @@
-import R from 'ramda';
+import * as R from 'ramda';
 
 const MICRO_MIDIUM_API_CORS = 'https://micro-medium-api.now.sh';
 const MICRO_MIDIUM_API_ORIGIN = 'https://micro-medium-api-michaelhsutw.now.sh';
