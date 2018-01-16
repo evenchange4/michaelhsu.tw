@@ -3,7 +3,7 @@
   "name": "michaelhsu.tw",
   "version": "1.4.0",
   "dependencies": {
-    "apollo-fetch": "^0.6.0",
+    "apollo-fetch": "^0.7.0",
     "date-fns": "^1.28.5",
     "polished": "^1.7.0",
     "react": "^16.0.0",
