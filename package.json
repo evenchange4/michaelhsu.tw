@@ -22,7 +22,7 @@
     "react-icons": "2.2.7",
     "react-media": "1.6.1",
     "react-progressive-bg-image": "2.1.2",
-    "styled-components": "2.4.0"
+    "styled-components": "3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.1",
