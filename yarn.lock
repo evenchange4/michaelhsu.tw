@@ -5936,7 +5936,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.6.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -6026,7 +6026,7 @@ railroad-diagrams@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
 
-ramda@0.25.0:
+ramda@^0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
 
@@ -6132,14 +6132,14 @@ react-media@1.6.1:
     json2mq "^0.2.0"
     prop-types "^15.5.10"
 
-react-progressive-bg-image@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-2.1.2.tgz#1c9031bbf860de8fcfa99f50149241036ca0d2cf"
+react-progressive-bg-image@2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-2.1.3.tgz#f9369823c2a557d1e92427dd1f2306d761cfd67e"
   dependencies:
-    prop-types "15.6.0"
-    ramda "0.25.0"
-    recompose "0.26.0"
-    rxjs "5.5.6"
+    prop-types "^15.6.0"
+    ramda "^0.25.0"
+    recompose "^0.26.0"
+    rxjs "^5.5.6"
 
 react-reconciler@^0.7.0:
   version "0.7.0"
@@ -6305,7 +6305,7 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
-recompose@0.26.0:
+recompose@^0.26.0:
   version "0.26.0"
   resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.26.0.tgz#9babff039cb72ba5bd17366d55d7232fbdfb2d30"
   dependencies:
@@ -6627,7 +6627,7 @@ rx-lite@*, rx-lite@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
 
-rxjs@5.5.6, rxjs@^5.4.2:
+rxjs@^5.4.2, rxjs@^5.5.6:
   version "5.5.6"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.6.tgz#e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02"
   dependencies:
