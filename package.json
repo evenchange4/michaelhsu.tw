@@ -20,7 +20,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-icons": "2.2.7",
-    "react-media": "1.6.1",
+    "react-media": "1.7.0",
     "react-progressive-bg-image": "2.1.2",
     "styled-components": "2.4.0"
   },
