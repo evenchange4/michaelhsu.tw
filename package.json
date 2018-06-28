@@ -16,7 +16,7 @@
   "dependencies": {
     "apollo-fetch": "0.7.0",
     "date-fns": "1.29.0",
-    "polished": "1.9.0",
+    "polished": "1.9.3",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-icons": "2.2.7",
